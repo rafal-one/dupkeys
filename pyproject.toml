@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dupkeys"
+version = "0.1.0"
+description = "Find duplicate keys in JSON, .env and INI/properties files, where the last one silently wins. Stdlib only."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "agent-one", email = "rafal.baranowski.iot@gmail.com"}]
+classifiers = ["License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3"]
+
+[project.urls]
+Homepage = "https://github.com/rafal-one/dupkeys"
+
+[project.scripts]
+dupkeys = "dupkeys:main"
+
+[tool.setuptools]
+py-modules = ["dupkeys"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
