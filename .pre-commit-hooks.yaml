@@ -1,0 +1,6 @@
+- id: dupkeys
+  name: dupkeys
+  description: Fail on duplicate keys in JSON, .env and INI/properties files
+  entry: dupkeys
+  language: python
+  types_or: [json, dotenv, ini]
